@@ -9,38 +9,26 @@
 </head>
 <body>
     <div class="box">
-        <h2>Sign UP</h2>
-        <form class="formLogin" method="post" action="signUp.php">
+        <h2>Login</h2>
+        <form class="formLogin" method="post" action="validate.php">
             <div class="inputBox">
                 <input type="text" name="username" required="">
                 <label for="">UserName</label>
             </div>
             <div class="inputBox">
-                <input type="text" name="name" required="">
-                <label for="">Nombre</label>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="surname" required="">
-                <label for="">Apellido</label>
-            </div>
-            <div class="inputBox">
                 <input type="password" name="password" required="">
                 <label>Password</label>
             </div>
-            <div class="inputBox">
-                <input type="password" name="password2" required="">
-                <label>Password Confirm</label>
-            </div>
-            <input type="submit" value="SingUp">
+            <input type="submit" value="Submit">
             <div class="logearse">
-                <p class="textP">Ya tienes cuenta ? <a class="textA" href="index.php">Logeate</a></p>  
+                <p class="textP">Aun no tienes cuenta? <a class="textA" href="signUpView.php">Registrate</a></p>
             </div>
-        </form>     
+        </form>
         <?php if(!empty($error)):?>
             <div class="err">
                 <ul class="error"><?php echo $error;?></ul>
             </div>
-        <?php endif; ?>    
+        <?php endif; ?>          
     </div>
 </body>
 </html>

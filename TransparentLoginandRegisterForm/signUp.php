@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             ':password' => $pass_encrypt
         ));
         $conexion = null;
-        header('Location:'.RUTA.'/index.html');
+        header('Location:'.RUTA.'/index.php');
     }
     
 }
