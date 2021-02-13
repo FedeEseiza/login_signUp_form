@@ -24,11 +24,11 @@
                 <label for="">Apellido</label>
             </div>
             <div class="inputBox">
-                <input type="password" name="password" required="">
+                <input type="password" name="password" minlength="6" maxlength="10" required="">
                 <label>Password</label>
             </div>
             <div class="inputBox">
-                <input type="password" name="password2" required="">
+                <input type="password" name="password2" minlength="6" maxlength="10" required="">
                 <label>Password Confirm</label>
             </div>
             <input type="submit" value="SingUp">
